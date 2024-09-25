@@ -4,11 +4,11 @@ import type { User } from "@/types/user";
 
 import users from "./users.json";
 
-export default function handler(req: NextApiRequest, res: NextApiResponse<User>) {
+export default function handler(req: NextApiRequest, res: NextApiResponse<User | { message: string }>) {
   switch (req.method) {
     case "GET":
       const user = users.find((user) => user.id === Number(req.query.id));
-      if (!user) return res.status(404).end("User not found");
+      if (!user) return res.status(404).json({ message: `User with ID ${req.query.id} not found` });
       else return res.status(200).json(user);
 
     default:
