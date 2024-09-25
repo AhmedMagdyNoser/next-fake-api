@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-const allowedOrigins = ["https://www.google.com"];
+const allowedOrigins = ["https://www.google.com", "http://localhost:3000"];
 
 export function middleware(request: NextRequest) {
   // Check the origin from the incoming request.
