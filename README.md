@@ -40,6 +40,10 @@ This project showcases a Next application with a built-in fake API for testing a
 
    The app will be running at `http://localhost:3000`.
 
+### Live Production
+
+You can check the live version of the app at [https://next-fake-api.vercel.app](https://next-fake-api.vercel.app).
+
 ## License
 
 This project is open-source under the MIT License.
