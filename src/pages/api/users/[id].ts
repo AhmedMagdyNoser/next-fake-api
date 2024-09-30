@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-import users from "./users.json";
+import users from "@/db/users.json";
 
 export default function handler(req: NextApiRequest, res: NextApiResponse<User | { message: string }>) {
   switch (req.method) {

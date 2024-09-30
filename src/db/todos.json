@@ -2,12 +2,12 @@
   {
     "id": "9cba",
     "title": "Make a coffee ☕",
-    "completed": false
+    "completed": true
   },
   {
     "id": "153d",
     "title": " Read a book 📖",
-    "completed": false
+    "completed": true
   },
   {
     "id": "f51b",
@@ -20,13 +20,8 @@
     "completed": false
   },
   {
-    "id": "5e081a06",
-    "title": "new",
+    "id": "f6f7",
+    "title": " Watch a movie 🎬",
     "completed": false
-  },
-  {
-    "id": "d91cf392",
-    "completed": false,
-    "title": "my new task"
   }
 ]
