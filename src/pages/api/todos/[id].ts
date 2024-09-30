@@ -1,6 +1,9 @@
 import type { NextApiRequest, NextApiResponse } from "next";
+import path from "path";
+import fs from "fs";
 
-import todos from "./todos.json";
+const dataFilePath = path.join(process.cwd(), "src/db/todos.json");
+const todos: Todo[] = JSON.parse(fs.readFileSync(dataFilePath, "utf-8"));
 
 export default function handler(req: NextApiRequest, res: NextApiResponse<Todo | { message: string }>) {
   switch (req.method) {
