@@ -48,55 +48,5 @@
     "id": 10,
     "name": "Tamer Fathy",
     "age": 29
-  },
-  {
-    "id": 11,
-    "name": "Fatma Hassan",
-    "age": 32
-  },
-  {
-    "id": 12,
-    "name": "Ali Kamel",
-    "age": 21
-  },
-  {
-    "id": 13,
-    "name": "Yasmin Khaled",
-    "age": 25
-  },
-  {
-    "id": 14,
-    "name": "Omar Sayed",
-    "age": 33
-  },
-  {
-    "id": 15,
-    "name": "Layla Ahmed",
-    "age": 30
-  },
-  {
-    "id": 16,
-    "name": "Ziad Mahmoud",
-    "age": 27
-  },
-  {
-    "id": 17,
-    "name": "Dina Mohamed",
-    "age": 22
-  },
-  {
-    "id": 18,
-    "name": "Ibrahim Fathy",
-    "age": 29
-  },
-  {
-    "id": 19,
-    "name": "Rania Tamer",
-    "age": 26
-  },
-  {
-    "id": 20,
-    "name": "Samy Hassan",
-    "age": 28
   }
 ]

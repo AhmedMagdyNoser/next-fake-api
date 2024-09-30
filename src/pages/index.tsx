@@ -10,6 +10,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <div>
         <h1>Hello</h1>
         <p>This is a Next app with a fake API.</p>
