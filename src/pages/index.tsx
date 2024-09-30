@@ -14,10 +14,18 @@ export default function Home() {
         <h1>Hello</h1>
         <p>This is a Next app with a fake API.</p>
 
+        <h2>Users API</h2>
         <nav style={{ marginTop: "10px", display: "flex", flexDirection: "column", gap: "10px" }}>
           <StyledLink href="/api/users" label="Users" />
           <StyledLink href="/api/users/1" label="User [id]" />
           <StyledLink href="/api/users/random" label="Random User" />
+        </nav>
+
+        <h2>Todos API</h2>
+        <nav style={{ marginTop: "10px", display: "flex", flexDirection: "column", gap: "10px" }}>
+          <StyledLink href="/api/todos" label="Todos" />
+          <StyledLink href="/api/todos/1" label="Todo [id]" />
+          <StyledLink href="/api/todos/random" label="Random Todo" />
         </nav>
       </div>
     </>
