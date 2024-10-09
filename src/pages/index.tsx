@@ -11,23 +11,35 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div style={{ fontFamily: "sans-serif" }}>
-        <h1>Hello</h1>
-        <p>This is a Next app with a fake API.</p>
+      <div className="min-h-screen bg-gray-50 text-gray-800">
+        <header className="bg-gradient-to-r from-blue-500 to-purple-500 p-8">
+          <h1 className="text-3xl font-extrabold text-center text-white tracking-tight drop-shadow-md">Next Fake API</h1>
+          <p className="mt-6 text-center text-lg text-white">A simple fake API service built with Next.js.</p>
+        </header>
 
-        <h2>Users API</h2>
-        <nav style={{ marginTop: "10px", display: "flex", flexDirection: "column", gap: "10px" }}>
-          <StyledLink href="/api/users" label="Users" />
-          <StyledLink href="/api/users/1" label="User By ID" />
-          <StyledLink href="/api/users/random" label="Random User" />
-        </nav>
+        <main className="max-w-4xl mx-auto px-4 py-10">
+          <section>
+            <h2 className="text-2xl font-semibold mb-4">Users API</h2>
+            <nav className="space-y-4">
+              <StyledLink href="/api/users" label="Users" />
+              <StyledLink href="/api/users/1" label="User By ID" />
+              <StyledLink href="/api/users/random" label="Random User" />
+            </nav>
+          </section>
 
-        <h2>Todos API</h2>
-        <nav style={{ marginTop: "10px", display: "flex", flexDirection: "column", gap: "10px" }}>
-          <StyledLink href="/api/todos" label="Todos" />
-          <StyledLink href="/api/todos/9cba" label="Todo By ID" />
-          <StyledLink href="/api/todos/random" label="Random Todo" />
-        </nav>
+          <section className="mt-12">
+            <h2 className="text-2xl font-semibold mb-4">Todos API</h2>
+            <nav className="space-y-4">
+              <StyledLink href="/api/todos" label="Todos" />
+              <StyledLink href="/api/todos/9cba" label="Todo By ID" />
+              <StyledLink href="/api/todos/random" label="Random Todo" />
+            </nav>
+          </section>
+        </main>
+
+        <footer className="bg-gray-800 text-gray-100 py-8 mt-12 text-center">
+          <p>© {new Date().getFullYear()} Next Fake API. All rights reserved.</p>
+        </footer>
       </div>
     </>
   );
@@ -35,24 +47,12 @@ export default function Home() {
 
 function StyledLink({ href, label }: { href: string; label: string }) {
   return (
-    <>
-      <Link href={href} className="link" target="_blank">
-        {label}
-      </Link>
-
-      <style>
-        {`
-          .link {
-            padding: 12px;
-            text-decoration: none;
-            background: #eee;
-            color: #333;
-          }
-          .link:hover {
-            background: #ddd;
-          }
-       `}
-      </style>
-    </>
+    <Link
+      href={href}
+      target="_blank"
+      className="block px-4 py-3 bg-white text-gray-600 rounded-md shadow transition hover:bg-gray-100"
+    >
+      {label}
+    </Link>
   );
 }
